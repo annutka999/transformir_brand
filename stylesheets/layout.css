@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --mainFontSize: 0.95vw;
+}
+html {
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  font-family: 'Neue Haas Grotesk Display Pro', Arial, Helvetica, sans-serif;
+  font-size: var(--mainFontSize);
+  padding: 1.9vw;
+}
+.mainMenu {
+  width: 45%;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainMenu a {
+  color: #222;
+  text-decoration: none;
+  transition: color ease 0.4s;
+}
+.mainMenu a.active,
+.mainMenu a.active:hover {
+  color: #cf00cf;
+  text-decoration: none;
+}
+.mainMenu a:hover {
+  color: #777;
+  text-decoration: underline;
+}
+form {
+  width: 40%;
+  background-color: white;
+  border-radius: 2vw;
+  padding: 2vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  align-items: center;
+}
+.placeholder input,
+select {
+  width: 100%;
+  height: 4.2vw;
+  border-radius: 1.8vw;
+  border: 0.06vw solid #777;
+  font-size: var(--mainFontSize);
+  padding: 0 2vw;
+}
+.placeholder input,
+.placeholder {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  width: 100%;
+}
+.placeholder::before {
+  position: absolute;
+  top: 1.4vw;
+  left: 2vw;
+  color: #777;
+  transition: all ease 0.3s;
+}
+.placeholder:has(input[name='userName'])::before {
+  content: 'Имя пользователя';
+}
+.placeholder:has(input[name='email'])::before {
+  content: 'Электронная почта';
+}
+.placeholder:has(input[name='phone'])::before {
+  content: 'Номер телефона';
+}
+input:focus,
+select:focus {
+  outline-color: cornflowerblue;
+}
+.placeholder:has(input:focus)::before,
+.placeholder:has(:not(:placeholder-shown))::before {
+  font-size: 1vw;
+  top: 0.5vw;
+}
+form button {
+  width: 34%;
+  height: 4.2vw;
+  border-radius: 2vw;
+  border: 0.1vw solid cornflowerblue;
+  background-color: white;
+  color: cornflowerblue;
+  font-size: 1.6vw;
+  transition: all ease 0.6s;
+}
+form button:hover {
+  cursor: pointer;
+  background-color: cornflowerblue;
+  color: white;
+}
+.afisha {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2vw;
+  margin: 2vw;
+}
+.afishaCard {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6vw;
+  padding: 2vw;
+  border-radius: 2vw;
+  background-color: white;
+  position: relative;
+}
+.afishaDate {
+  text-align: right;
+  font-size: 1.2vw;
+  color: #777;
+}
+.afishaDuration {
+  font-size: 1.2vw;
+  color: cornflowerblue;
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+}
+.afishaHeader {
+  font-weight: 500;
+}
+.afishaTimeWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2vw;
+}
+.afishaTime {
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 1.2vw;
+  padding: 0.6vw 1vw;
+  font-size: 1.2vw;
+}

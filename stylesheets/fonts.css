@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src:
+    url('../fonts/Neue\ Haas\ Grotesk\ Display\ Pro\ 55\ Roman.otf')
+      format('otf'),
+    url('../fonts/Neue-Haas-Grotesk-Display-Pro-55-Roman.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}

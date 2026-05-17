@@ -1,0 +1,117 @@
+@import 'reset.css';
+@import 'fonts.css';
+
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: #242424;
+  font-family: 'PT Root UI';
+}
+.stars {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.star {
+  border-radius: 100%;
+  background-color: #fff3d5;
+  position: absolute;
+  animation: star 2s linear infinite alternate;
+}
+@keyframes star {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(0.6);
+  }
+}
+main {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 6vw;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.error h1 {
+  font-size: 16vw;
+  color: #969696;
+  text-shadow: 0 0 6vw #828282;
+  transition: all ease 1.2s;
+  text-align: center;
+}
+.error p {
+  font-size: 2.8vw;
+  color: #969696;
+  transition: all ease 1.2s;
+  text-align: center;
+}
+.text {
+  text-align: center;
+  color: #fff3d5;
+  background-color: #242424;
+  font-size: 1.6vw;
+  line-height: 130%;
+}
+.text a {
+  color: #ffc721;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+}
+.buttons button {
+  padding: 1.6vw 3vw;
+  background-color: #242424;
+  border-radius: 1vw;
+  border: 0.16vw solid #969696;
+  color: #969696;
+  cursor: pointer;
+  transition: all ease 0.6s;
+  font-size: 2vw;
+}
+.buttons button:hover {
+  color: #ffc721;
+  border-color: #ffc721;
+}
+.error h1.active {
+  color: #ffc721;
+  text-shadow: 0 0 12vw #ba9117;
+  animation: light 2s infinite linear alternate;
+}
+@keyframes light {
+  0% {
+    text-shadow: 0 0 12vw #ba9117;
+  }
+  100% {
+    text-shadow: 0 0 9vw #a98414;
+  }
+}
+.error p.active {
+  color: #ffc721;
+}
+.light.active {
+  border-color: #ffc721;
+  background-color: #ffc721;
+  color: #fff3d5;
+}
+.light.active:hover {
+  color: #242424;
+}
