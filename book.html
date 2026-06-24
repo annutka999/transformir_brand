@@ -16,9 +16,322 @@
       <a href="events.html">МЕРОПРИЯТИЯ</a>
       <a href="shop.html">МАГАЗИН</a>
       <a href="book.html" class="active">КНИГА</a>
-      <a href="transformation.html">ТРАНСФОРМАЦИЯ</a>
+      <a href="transformir_interactive.poster/index.html">ТРАНСФОРМАЦИЯ</a>
     </nav>
 
-    <h1>Книга</h1>
+    <!-- экран 1 -->
+    <section class="book-cover">
+      <div class="book-cover-text">
+        <p class="book-cover-title">ОСНОВЫ БРЕНДА.</p>
+        <p class="book-cover-subtitle">
+          ИНТЕРЬЕР, ЭКСТЕРЬЕР, ИСТОРИИ ТРАНСФОРМАЦИИ
+        </p>
+        <p class="book-cover-desc">
+          Эта книга о том, как родился бренд, какие ценности лежат в его основе
+          и как мы движемся вперёд.
+        </p>
+        <button class="book-cover-btn" id="openBookBtn">
+          ПОСМОТРЕТЬ КНИГУ
+        </button>
+      </div>
+
+      <div class="book-cover-image">
+        <img src="images/book-cover.svg" alt="Обложка книги" />
+      </div>
+    </section>
+
+    <!-- экран 2 -->
+    <section class="book-preview">
+      <div class="book-preview-spreads">
+        <img
+          src="images/book-open_1.svg"
+          alt=""
+          class="preview-spread spread-1"
+        />
+        <img
+          src="images/book-open_1.svg"
+          alt=""
+          class="preview-spread spread-2"
+        />
+        <img
+          src="images/book-open_1.svg"
+          alt=""
+          class="preview-spread spread-3"
+        />
+        <img
+          src="images/book-open_1.svg"
+          alt=""
+          class="preview-spread spread-4"
+        />
+        <img
+          src="images/book-open_1.svg"
+          alt=""
+          class="preview-spread spread-5"
+        />
+      </div>
+
+      <div class="book-preview-text">
+        <p class="book-preview-title">ЧТО ВЫ НАЙДЁТЕ ВНУТРИ?</p>
+        <ul class="book-preview-list">
+          <li>ЦЕННОСТИ И МИССИЯ</li>
+          <li>КОРПОРАТИВНЫЕ ПРАВИЛА</li>
+          <li>ИНТЕРЬЕРНЫЕ РЕШЕНИЯ</li>
+          <li>НАВИГАЦИЯ</li>
+          <li>ПУТИ КЛИЕНТОВ</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- экран 3 -->
+    <section class="book-reader" id="bookReader">
+      <p class="book-reader-counter">
+        <span id="currentPage">01</span>/<span id="totalPages">40</span>
+      </p>
+
+      <div class="book-reader-stack" id="bookStack">
+        <img class="bg-spread" src="images/book-page_0.svg" alt="" />
+
+        <img
+          class="spread-page"
+          data-page="1"
+          src="images/book-page_0.svg"
+          alt="Разворот 1"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="2"
+          src="images/book-page_2.svg"
+          alt="Разворот 2"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="3"
+          src="images/book-page_3.svg"
+          alt="Разворот 3"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="4"
+          src="images/book-page_4.svg"
+          alt="Разворот 4"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="5"
+          src="images/book-page_5.svg"
+          alt="Разворот 5"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="6"
+          src="images/book-page_6.svg"
+          alt="Разворот 6"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="7"
+          src="images/book-page_7.svg"
+          alt="Разворот 7"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="8"
+          src="images/book-page_8.svg"
+          alt="Разворот 8"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="9"
+          src="images/book-page_9.svg"
+          alt="Разворот 9"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="10"
+          src="images/book-page_10.svg"
+          alt="Разворот 10"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="11"
+          src="images/book-page_11.svg"
+          alt="Разворот 11"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="12"
+          src="images/book-page_12.svg"
+          alt="Разворот 12"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="13"
+          src="images/book-page_13.svg"
+          alt="Разворот 13"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="14"
+          src="images/book-page_14.svg"
+          alt="Разворот 14"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="15"
+          src="images/book-page_15.svg"
+          alt="Разворот 15"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="16"
+          src="images/book-page_16.svg"
+          alt="Разворот 16"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="17"
+          src="images/book-page_17.svg"
+          alt="Разворот 17"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="18"
+          src="images/book-page_18.svg"
+          alt="Разворот 18"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="19"
+          src="images/book-page_19.svg"
+          alt="Разворот 19"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="20"
+          src="images/book-page_20.svg"
+          alt="Разворот 20"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="21"
+          src="images/book-page_21.svg"
+          alt="Разворот 21"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="22"
+          src="images/book-page_22.svg"
+          alt="Разворот 22"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="23"
+          src="images/book-page_23.svg"
+          alt="Разворот 23"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="24"
+          src="images/book-page_24.svg"
+          alt="Разворот 24"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="25"
+          src="images/book-page_25.svg"
+          alt="Разворот 25"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="26"
+          src="images/book-page_26.svg"
+          alt="Разворот 26"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="27"
+          src="images/book-page_27.svg"
+          alt="Разворот 27"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="28"
+          src="images/book-page_28.svg"
+          alt="Разворот 28"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="29"
+          src="images/book-page_29.svg"
+          alt="Разворот 29"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="30"
+          src="images/book-page_30.svg"
+          alt="Разворот 30"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="31"
+          src="images/book-page_31.svg"
+          alt="Разворот 31"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="32"
+          src="images/book-page_32.svg"
+          alt="Разворот 32"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="33"
+          src="images/book-page_33.svg"
+          alt="Разворот 33"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="34"
+          src="images/book-page_34.svg"
+          alt="Разворот 34"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="35"
+          src="images/book-page_35.svg"
+          alt="Разворот 35"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="36"
+          src="images/book-page_36.svg"
+          alt="Разворот 36"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="37"
+          src="images/book-page_37.svg"
+          alt="Разворот 37"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="38"
+          src="images/book-page_38.svg"
+          alt="Разворот 38"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="39"
+          src="images/book-page_39.svg"
+          alt="Разворот 39"
+        />
+        <img
+          class="spread-page hidden"
+          data-page="40"
+          src="images/book-page_1.svg"
+          alt="Разворот 40"
+        />
+      </div>
+    </section>
   </body>
 </html>

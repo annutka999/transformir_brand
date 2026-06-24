@@ -8,26 +8,24 @@
     <script defer src="javascripts/404.js"></script>
   </head>
   <body>
-    <div class="stars"></div>
+    <div id="burger"></div>
+    <nav class="mainMenu">
+      <a href="index.html">ГЛАВНАЯ</a>
+      <a href="about.html">О НАС</a>
+      <a href="events.html">МЕРОПРИЯТИЯ</a>
+      <a href="shop.html">МАГАЗИН</a>
+      <a href="book.html">КНИГА</a>
+      <a href="transformir_interactive.poster/index.html">ТРАНСФОРМАЦИЯ</a>
+    </nav>
 
-    <main>
-      <section class="error">
-        <h1>404</h1>
-        <p></p>
-      </section>
-
-      <section class="text">
-        <p>
-          В зале <a href="index.html">музея «Огни Москвы»</a> хранится множество
-          фонарей и лампад, но такой страницы нет ни в одной экспозиции.
-          Возможно, она погасла или была перенесена.
+    <main class="notFound">
+      <img src="images/404.svg" class="notFound-bg" alt="" />
+      <div class="notFound-content">
+        <p class="notFound-text">
+          ОЙ! ЧТО-ТО ПОШЛО НЕ ТАК. СТРАНИЦА НЕ НАЙДЕНА
         </p>
-      </section>
-
-      <section class="buttons">
-        <button class="link">назад</button>
-        <button class="light">зажечь</button>
-      </section>
+        <a href="index.html" class="notFound-link">ВЕРНУТЬСЯ НА ГЛАВНУЮ</a>
+      </div>
     </main>
   </body>
 </html>

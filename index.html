@@ -6,18 +6,121 @@
     <title>TRANSFORMIR</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
     <script defer src="javascripts/scripts.js"></script>
-    <script defer src="javascripts/index.js"></script>
   </head>
-  <body>
-    <div id="burger"></div>
 
-    <nav class="mainMenu">
-      <a href="index.html" class="active">ГЛАВНАЯ</a>
-      <a href="about.html">О НАС</a>
-      <a href="events.html">МЕРОПРИЯТИЯ</a>
-      <a href="shop.html">МАГАЗИН</a>
-      <a href="book.html">КНИГА</a>
-      <a href="transformation.html">ТРАСНФОРМАЦИЯ</a>
-    </nav>
+  <body>
+    <main class="homeScreen">
+      <img src="images/transformir-main.svg" class="home-bg" alt="" />
+      <img src="images/transformir-phone.svg" class="home-phone" alt="" />
+
+      <div class="section-item section-events">
+        <a href="events.html" class="section-title">МЕРОПРИЯТИЯ</a>
+        <div class="section-card">
+          <img src="images/events.svg" alt="Мероприятия" />
+          <p>
+            Лекции, дискуссии, воркшопы и публичные события о культуре, медиа и
+            трансформации.
+          </p>
+          <a href="events.html" class="section-link">ПЕРЕЙТИ К РАЗДЕЛУ</a>
+        </div>
+      </div>
+
+      <div class="section-item section-transformation">
+        <a
+          href="transformir_interactive.poster/index.html"
+          class="section-title"
+          >ТРАНСФОРМАЦИЯ</a
+        >
+        <div class="section-card">
+          <img src="images/transformation.svg" alt="Трансформация" />
+          <p>
+            Демо-версия процесса личной трансформации. Опробуйте заранее,
+            погрузитесь в себя.
+          </p>
+          <a
+            href="transformir_interactive.poster/index.html"
+            class="section-link"
+            >ПЕРЕЙТИ К РАЗДЕЛУ</a
+          >
+        </div>
+      </div>
+
+      <div class="section-item section-book">
+        <a href="book.html" class="section-title">КНИГА</a>
+        <div class="section-card">
+          <img src="images/book.svg" alt="Книга" />
+          <p>
+            Уникальное печатное издание о ключевых идеях и проектах лаборатории.
+          </p>
+          <a href="book.html" class="section-link">ПЕРЕЙТИ К РАЗДЕЛУ</a>
+        </div>
+      </div>
+
+      <div class="section-item section-shop">
+        <a href="shop.html" class="section-title">МАГАЗИН</a>
+        <div class="section-card">
+          <img src="images/shop.svg" alt="Магазин" />
+          <p>
+            Элементы лимитированного мерча в стилистике звёздной лаборатории.
+          </p>
+          <a href="shop.html" class="section-link">ПЕРЕЙТИ К РАЗДЕЛУ</a>
+        </div>
+      </div>
+
+      <div class="section-item section-about">
+        <a href="about.html" class="section-title">О НАС</a>
+        <div class="section-card">
+          <img src="images/about.svg" alt="О нас" />
+          <p>
+            О философии бренда, преимуществах, зачем нужны «звёздные» технологии
+            в повседневной жизни.
+          </p>
+          <a href="about.html" class="section-link">ПЕРЕЙТИ К РАЗДЕЛУ</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="homeFooter">
+      <div class="homeFooter-left">
+        <p class="homeFooter-brand">TRANSFORMIR LAB</p>
+        <p>
+          Будьте в курсе новостей лаборатории. Получайте персональные бонусы и
+          скидки на сеансы трансформации.
+        </p>
+        <div class="homeFooter-email">
+          <input type="email" placeholder="E-MAIL" />
+          <span>→</span>
+        </div>
+        <!-- <div class="additionally">
+          <a href="404.html">УСЛОВИЯ ИСПОЛЬЗОВАНИЯ</a>
+          <a href="404.html">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+        </div> -->
+      </div>
+
+      <div class="homeFooter-right">
+        <div class="homeFooter-menu">
+          <p class="homeFooter-menu-title">НАВИГАЦИЯ</p>
+          <a href="about.html">О НАС</a>
+          <a href="events.html">МЕРОПРИЯТИЯ</a>
+          <a href="shop.html">МАГАЗИН</a>
+          <a href="book.html">КНИГА</a>
+          <a href="transformir_interactive.poster/index.html">ТРАНСФОРМАЦИЯ</a>
+          <!-- <div class="footer-name">
+            <p class="name">КОСМАЧЁВА АННА</p>
+          </div> -->
+        </div>
+
+        <div class="homeFooter-contacts">
+          <p class="homeFooter-menu-title">КОНТАКТЫ</p>
+          <a href="404.html">TELEGRAM</a>
+          <a href="404.html">INSTAGRAM</a>
+          <a href="404.html">TWITTER</a>
+          <a href="404.html">ВКОНТАКТЕ</a>
+          <!-- <div class="footer-group">
+            <p class="group">Б25ДЗ09</p>
+          </div> -->
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

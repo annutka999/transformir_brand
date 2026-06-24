@@ -10,15 +10,260 @@
   <body>
     <div id="burger"></div>
 
-    <nav class="mainMenu">
-      <a href="index.html">ГЛАВНАЯ</a>
-      <a href="about.html">О НАС</a>
-      <a href="events.html">МЕРОПРИЯТИЯ</a>
-      <a href="shop.html" class="active">МАГАЗИН</a>
-      <a href="book.html">КНИГА</a>
-      <a href="transformation.html">ТРАНСФОРМАЦИЯ</a>
-    </nav>
+    <header class="shopHeader">
+      <nav class="mainMenu">
+        <a href="index.html">ГЛАВНАЯ</a>
+        <a href="about.html">О НАС</a>
+        <a href="events.html">МЕРОПРИЯТИЯ</a>
+        <a href="shop.html" class="active">МАГАЗИН</a>
+        <a href="book.html">КНИГА</a>
+        <a href="transformir_interactive.poster/index.html">ТРАНСФОРМАЦИЯ</a>
+      </nav>
+      <button class="cart-btn">КОРЗИНА (<span id="cart-count">0</span>)</button>
+    </header>
 
-    <h1>МАГАЗИН</h1>
+    <main class="shopMain">
+      <div class="shop-number">
+        <span class="shop-label">№01</span>
+      </div>
+      <section class="shop-product">
+        <div class="shop-column shop-info">
+          <p class="shop-name">«НОВАЯ ГЛАВА»</p>
+          <p class="shop-text">
+            Момент, когда ты выбираешь новое: новый опыт, новую версию себя,
+            новое движение вперёд. Подари человеку возможность выбрать то, что
+            действительно откликается.
+          </p>
+        </div>
+
+        <div class="shop-column">
+          <p class="shop-item-number">01.</p>
+
+          <div class="shop-img-wrap">
+            <img
+              src="images/brochure.svg"
+              alt="Брошюра"
+              class="shop-img-tall"
+            />
+            <div class="shop-overlay">
+              <div class="shop-controls">
+                <div class="qty-box">
+                  <button class="minus">−</button>
+                  <span class="qty">1</span>
+                  <button class="plus">+</button>
+                </div>
+
+                <div class="shop-price">800₽</div>
+              </div>
+
+              <button class="add-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-column">
+          <p class="shop-item-number">02.</p>
+          <div class="shop-img-wrap">
+            <img
+              src="images/certificate.svg"
+              alt="Сертификат"
+              class="shop-img-wide"
+            />
+            <div class="shop-overlay">
+              <div class="shop-controls">
+                <div class="qty-box">
+                  <button class="minus">−</button>
+                  <span class="qty">1</span>
+                  <button class="plus">+</button>
+                </div>
+
+                <div class="shop-price">3000₽</div>
+              </div>
+
+              <button class="add-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="shop-number">
+        <span class="shop-label">№02</span>
+      </div>
+
+      <section class="shop-product">
+        <div class="shop-column">
+          <p class="shop-item-number">01.</p>
+          <div class="shop-img-wrap">
+            <img
+              src="images/stikers.svg"
+              alt="Наклейки"
+              class="shop-img-square"
+            />
+            <div class="shop-overlay">
+              <div class="shop-controls">
+                <div class="qty-box">
+                  <button class="minus">−</button>
+                  <span class="qty">1</span>
+                  <button class="plus">+</button>
+                </div>
+
+                <div class="shop-price">500₽</div>
+              </div>
+
+              <button class="add-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-column shop-info">
+          <p class="shop-name">«НАПОМИНАНИЕ»</p>
+          <p class="shop-text">
+            Мини-символы большой трансформации. Носи отдельно или собирай свою
+            личную космическую систему. Для ключей, рюкзака, чехла или как
+            личный талисман.
+          </p>
+        </div>
+
+        <div class="shop-column">
+          <p class="shop-item-number">02.</p>
+          <div class="shop-img-wrap">
+            <img
+              src="images/keychain.svg"
+              alt="Брелок"
+              class="shop-img-square"
+            />
+            <div class="shop-overlay">
+              <div class="shop-controls">
+                <div class="qty-box">
+                  <button class="minus">−</button>
+                  <span class="qty">1</span>
+                  <button class="plus">+</button>
+                </div>
+
+                <div class="shop-price">400₽</div>
+              </div>
+
+              <button class="add-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="shop-number">
+        <span class="shop-label">№03</span>
+      </div>
+
+      <section class="shop-product">
+        <div class="shop-column shop-info">
+          <p class="shop-name">«ГАЛАКТИКА»</p>
+          <p class="shop-text">
+            Космос, хаос и энергия трансформации — в одном объекте. Футболка и
+            толстовка для тех, кто не боится быть заметным.
+          </p>
+        </div>
+
+        <div class="shop-column">
+          <p class="shop-item-number">01.</p>
+          <div class="shop-img-wrap">
+            <img
+              src="images/hoodie.svg"
+              alt="Толстовка"
+              class="shop-img-tall"
+            />
+            <div class="shop-overlay">
+              <div class="shop-controls">
+                <div class="qty-box">
+                  <button class="minus">−</button>
+                  <span class="qty">1</span>
+                  <button class="plus">+</button>
+                </div>
+
+                <div class="shop-price">3500₽</div>
+              </div>
+
+              <button class="add-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-column">
+          <p class="shop-item-number">02.</p>
+          <div class="shop-img-wrap">
+            <img
+              src="images/t-shirt.svg"
+              alt="Футболка"
+              class="shop-img-tall"
+            />
+            <div class="shop-overlay">
+              <div class="shop-controls">
+                <div class="qty-box">
+                  <button class="minus">−</button>
+                  <span class="qty">1</span>
+                  <button class="plus">+</button>
+                </div>
+
+                <div class="shop-price">2500₽</div>
+              </div>
+
+              <button class="add-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="shop-number">
+        <span class="shop-label">№04</span>
+      </div>
+
+      <section class="shop-product">
+        <div class="shop-column">
+          <p class="shop-item-number">01.</p>
+          <div class="shop-img-wrap">
+            <img src="images/shopper.svg" alt="Шоппер" class="shop-img-tall" />
+            <div class="shop-overlay">
+              <div class="shop-controls">
+                <div class="qty-box">
+                  <button class="minus">−</button>
+                  <span class="qty">1</span>
+                  <button class="plus">+</button>
+                </div>
+
+                <div class="shop-price">1700₽</div>
+              </div>
+
+              <button class="add-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-column shop-info">
+          <p class="shop-name">«УПАКОВКА»</p>
+          <p class="shop-text">
+            Даже упаковка — часть истории. Для подарков, мерча и красивых
+            моментов. Бери с собой всё, что важно.
+          </p>
+        </div>
+
+        <div class="shop-column">
+          <p class="shop-item-number">02.</p>
+          <div class="shop-img-wrap">
+            <img src="images/bag.svg" alt="Пакет" class="shop-img-tall" />
+            <div class="shop-overlay">
+              <div class="shop-controls">
+                <div class="qty-box">
+                  <button class="minus">−</button>
+                  <span class="qty">1</span>
+                  <button class="plus">+</button>
+                </div>
+
+                <div class="shop-price">300₽</div>
+              </div>
+
+              <button class="add-btn">В КОРЗИНУ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

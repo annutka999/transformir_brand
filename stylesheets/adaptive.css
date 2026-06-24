@@ -45,6 +45,7 @@
     justify-content: flex-start;
     padding: 60px 3.4vw 2vw 3.4vw;
     gap: 4vw;
+    background-color: #fff;
     transition: transform ease 0.8s;
     transform: translateX(-100%);
   }
@@ -52,9 +53,11 @@
     font-size: 8vw;
     position: relative;
   }
-  #burger.active + .mainMenu {
+
+  body:has(#burger.active) .mainMenu {
     transform: translateX(0);
   }
+
   .mainMenu a:not(.active)::before {
     content: '';
     position: absolute;
@@ -71,5 +74,496 @@
   .mainMenu a:not(.active):hover::before {
     opacity: 1;
     transform: translateX(3vw);
+  }
+}
+
+@media (max-width: 600px) {
+  .home-bg {
+    display: none;
+  }
+
+  .home-phone {
+    display: block;
+  }
+  .section-title {
+    font-size: 4vw;
+  }
+
+  .homeScreen {
+    position: relative;
+    width: 100%;
+    height: 165vw;
+  }
+
+  .section-events .section-card,
+  .section-transformation .section-card,
+  .section-book .section-card,
+  .section-shop .section-card,
+  .section-about .section-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    width: 84vw;
+    height: auto;
+    padding: 5vw;
+    z-index: 101;
+    background: white;
+    border: 1px solid black;
+  }
+
+  .section-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .section-card p {
+    font-size: 3.5vw;
+    line-height: 1.5;
+  }
+
+  .section-link {
+    font-size: 3vw;
+  }
+
+  .section-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+  }
+
+  .section-events .section-card img {
+    width: 100%;
+  }
+
+  .section-transformation .section-card img {
+    width: 100%;
+  }
+
+  .section-book .section-card img {
+    width: 100%;
+  }
+
+  .section-shop .section-card img {
+    width: 100%;
+  }
+
+  .section-about .section-card img {
+    width: 100%;
+  }
+}
+
+/* ГЛАВНАЯ */
+
+@media (max-width: 600px) {
+  .section-item {
+    position: static;
+  }
+
+  .section-title {
+    position: absolute;
+  }
+
+  .section-events .section-title {
+    top: 3.5%;
+    left: 4%;
+  }
+  .section-shop .section-title {
+    top: 18%;
+    left: 66%;
+  }
+  .section-transformation .section-title {
+    top: 51%;
+    left: 50%;
+  }
+  .section-book .section-title {
+    top: 60%;
+    left: 7%;
+  }
+  .section-about .section-title {
+    top: 79%;
+    left: 44%;
+  }
+
+  .section-events .section-card,
+  .section-transformation .section-card,
+  .section-book .section-card,
+  .section-shop .section-card,
+  .section-about .section-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    width: 84vw;
+    height: auto;
+    padding: 5vw;
+    z-index: 101;
+    background: white;
+    border: 0.119vw solid black;
+  }
+}
+
+/* МАГАЗИН  */
+
+@media (max-width: 600px) {
+  .shopHeader {
+    padding: 0 5vw;
+    justify-content: flex-end;
+  }
+
+  .cart-btn {
+    font-size: 3.5vw;
+    padding: 4vw 0;
+  }
+
+  .shopMain {
+    padding: 0 5vw 10vw;
+  }
+
+  .shop-product {
+    flex-direction: column;
+    gap: 5vw;
+    padding: 6vw 0;
+  }
+
+  .shop-column {
+    width: 100%;
+    padding-right: 0;
+    gap: 2vw;
+  }
+
+  .shop-number,
+  .shop-item-number,
+  .shop-divider-label,
+  .shop-label {
+    font-size: 3vw;
+  }
+  .shop-img-wrap img {
+    width: 100%;
+  }
+
+  .shop-name {
+    font-size: 4vw;
+  }
+
+  .shop-text {
+    font-size: 3vw;
+    line-height: 1.5;
+  }
+
+  .shop-divider-dot {
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+
+  .shop-overlay {
+    padding: 3vw;
+  }
+
+  .shop-controls {
+    margin-bottom: 3vw;
+  }
+
+  .qty-box {
+    gap: 4vw;
+  }
+
+  .minus,
+  .plus {
+    font-size: 6vw;
+    line-height: 1;
+  }
+
+  .qty {
+    font-size: 4vw;
+    min-width: 6vw;
+  }
+
+  .shop-price {
+    font-size: 4vw;
+  }
+
+  .add-btn {
+    height: 10vw;
+    font-size: 3.5vw;
+  }
+}
+
+/* МЕРОПРИЯТИЯ */
+
+@media (max-width: 600px) {
+  .eventsMain {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+
+  .events-col-info {
+    order: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  .events-col-poster {
+    order: 2;
+    width: 100%;
+  }
+
+  .events-col-sidebar {
+    order: 3;
+    width: 100%;
+  }
+
+  .events-col {
+    padding: 12vw 5vw;
+  }
+
+  .series-info-block.active {
+    height: auto;
+  }
+
+  .series-number,
+  .series-subtitle,
+  .series-desc,
+  .sidebar-number,
+  .sidebar-name {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+
+  .series-name {
+    font-size: 4.5vw;
+  }
+
+  .series-dates {
+    font-size: 12vw;
+    line-height: 24vw;
+  }
+
+  .poster-thumb {
+    width: 18vw;
+    height: 26vw;
+  }
+
+  .sidebar-top {
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar-card {
+    width: calc(50% - 0.75vw);
+  }
+}
+
+/* О НАС */
+
+@media (max-width: 600px) {
+  .about-hero {
+    flex-direction: column;
+    padding: 8vw 5vw;
+    gap: 6vw;
+  }
+
+  .about-hero-text {
+    width: 100%;
+  }
+
+  .about-hero-title {
+    font-size: 7vw;
+  }
+
+  .about-hero-desc,
+  .about-hero-btn {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+
+  .about-block {
+    padding: 6vw 5vw;
+  }
+
+  .about-block-text {
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  .about-block-title,
+  .about-block-desc {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .about-block-title {
+    font-size: 4.5vw;
+  }
+
+  .about-block-desc {
+    font-size: 3vw;
+  }
+
+  .about-swiper .swiper-slide img {
+    height: 60vw;
+  }
+
+  .about-advantages {
+    padding: 6vw 5vw;
+  }
+
+  .about-advantages-title {
+    font-size: 4vw;
+  }
+
+  .advantages-row {
+    flex-direction: column;
+    gap: 6vw;
+  }
+
+  .advantage-item {
+    width: 100%;
+    border: 0.3vw solid #000;
+  }
+
+  .advantage-name,
+  .advantage-desc {
+    font-size: 3vw;
+  }
+
+  .advantage-number {
+    font-size: 15vw;
+  }
+  .about-hero-btn,
+  .book-cover-btn {
+    font-size: 4vw;
+    border: 0.3vw solid #000;
+    padding: 2vw 2vw;
+    cursor: pointer;
+    transition:
+      background 0.2s,
+      color 0.2s;
+  }
+}
+
+/* КНИГА */
+
+@media (max-width: 600px) {
+  .book-cover {
+    flex-direction: column;
+    gap: 6vw;
+  }
+
+  .book-cover-text {
+    width: 100%;
+    padding: 13vw 5vw;
+    gap: 5vw;
+  }
+
+  .book-cover-title {
+    font-size: 7vw;
+  }
+
+  .book-cover-subtitle {
+    font-size: 4.5vw;
+    line-height: 5vw;
+  }
+
+  .book-cover-desc {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+
+  .book-preview {
+    flex-direction: column;
+    padding: 6vw 5vw;
+    min-height: auto;
+    gap: 8vw;
+  }
+
+  .book-preview-text {
+    order: 1;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .book-preview-spreads {
+    order: 2;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .preview-spread {
+    position: static;
+    width: 100%;
+    margin-bottom: 4vw;
+  }
+
+  .book-preview-title {
+    font-size: 7vw;
+  }
+
+  .book-preview-list {
+    font-size: 4.5vw;
+    gap: 5vw;
+  }
+
+  .book-reader {
+    height: 80vw;
+  }
+
+  .book-reader-stack {
+    height: 80vw;
+  }
+
+  .book-reader-counter {
+    font-size: 3.75vw;
+    top: 3vw;
+  }
+}
+
+/* подвал */
+
+@media (max-width: 600px) {
+  .homeFooter {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 10vw 5vw;
+    gap: 10vw;
+  }
+
+  .homeFooter-left {
+    width: 100%;
+    gap: 5vw;
+  }
+
+  .homeFooter-right {
+    flex-direction: column;
+    width: 100%;
+    gap: 8vw;
+  }
+
+  .homeFooter p {
+    font-size: 4.5vw;
+    line-height: 6vw;
+  }
+
+  .homeFooter-email input {
+    font-size: 4.5vw;
+  }
+
+  .homeFooter-menu-title {
+    margin-bottom: 4vw;
+    font-size: 4vw;
+  }
+
+  .homeFooter-menu a,
+  .homeFooter-contacts a {
+    font-size: 4.5vw;
+    line-height: 6vw;
   }
 }

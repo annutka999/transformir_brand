@@ -9,16 +9,232 @@
   </head>
   <body>
     <div id="burger"></div>
-
     <nav class="mainMenu">
       <a href="index.html">ГЛАВНАЯ</a>
       <a href="about.html">О НАС</a>
       <a href="events.html" class="active">МЕРОПРИЯТИЯ</a>
       <a href="shop.html">МАГАЗИН</a>
       <a href="book.html">КНИГА</a>
-      <a href="transformation.html">ТРАСНФОРМАЦИЯ</a>
+      <a href="transformir_interactive.poster/index.html">ТРАНСФОРМАЦИЯ</a>
     </nav>
 
-    <h1>МЕРОПРИЯТИЯ</h1>
+    <main class="eventsMain">
+      <!-- колонка 1 -->
+      <div class="events-col events-col-poster">
+        <img id="activePosterImg" src="images/poster_1.1.svg" alt="" />
+      </div>
+
+      <!-- колонка 2 -->
+      <div class="events-col events-col-info">
+        <div class="series-info-block active" data-series="04">
+          <div class="series-top">
+            <p class="series-number">04.</p>
+            <p class="series-name">UNFOLD // CHALLENGE // REFLECT</p>
+          </div>
+          <div class="series-bottom">
+            <p class="series-dates">11.07 — 27.08</p>
+            <p class="series-subtitle">
+              ЛЕКЦИОННЫЕ СЕТЫ «ДЕКОНСТРУКЦИЯ ЛИЧНОСТИ»
+            </p>
+            <p class="series-desc">
+              Как природные черты и жизненный опыт складываются в уникальную
+              личность, так и пиксели формируют изображение.
+            </p>
+            <div class="series-posters">
+              <img
+                class="poster-thumb active"
+                data-poster="images/poster_1.1.svg"
+                src="images/poster_1.1.svg"
+                alt="Плакат 1"
+              />
+              <img
+                class="poster-thumb"
+                data-poster="images/poster_1.2.svg"
+                src="images/poster_1.2.svg"
+                alt="Плакат 2"
+              />
+              <img
+                class="poster-thumb"
+                data-poster="images/poster_1.3.svg"
+                src="images/poster_1.3.svg"
+                alt="Плакат 3"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="series-info-block" data-series="05">
+          <div class="series-top">
+            <p class="series-number">05.</p>
+            <p class="series-name">PROCESS // EVOLVE // TRANSFORM</p>
+          </div>
+          <div class="series-bottom">
+            <p class="series-dates">01.09 — 15.10</p>
+            <p class="series-subtitle">ВОРКШОПЫ «КАРТА ТРАНСФОРМАЦИИ»</p>
+            <p class="series-desc">
+              Каждый процесс изменений уникален, как уникален путь каждой
+              звезды. Найди свой маршрут.
+            </p>
+            <div class="series-posters">
+              <img
+                class="poster-thumb"
+                data-poster="images/poster_2.1.svg"
+                src="images/poster_2.1.svg"
+                alt="Плакат 1"
+              />
+              <img
+                class="poster-thumb"
+                data-poster="images/poster_2.2.svg"
+                src="images/poster_2.2.svg"
+                alt="Плакат 2"
+              />
+              <img
+                class="poster-thumb"
+                data-poster="images/poster_2.3.svg"
+                src="images/poster_2.3.svg"
+                alt="Плакат 3"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="series-info-block" data-series="06">
+          <div class="series-top">
+            <p class="series-number">06.</p>
+            <p class="series-name">ГРУЗ ПРОШЛОГО // ВРЕМЯ УХОДИТ</p>
+          </div>
+          <div class="series-bottom">
+            <p class="series-dates">20.10 — 30.11</p>
+            <p class="series-subtitle">ДИСКУССИИ «АРХИВ ЛИЧНОСТИ»</p>
+            <p class="series-desc">
+              Прошлое формирует нас, но не должно удерживать. Серия встреч о
+              том, как отпускать и двигаться дальше.
+            </p>
+            <div class="series-posters">
+              <img
+                class="poster-thumb"
+                data-poster="images/poster_3.1.svg"
+                src="images/poster_3.1.svg"
+                alt="Плакат 1"
+              />
+              <img
+                class="poster-thumb"
+                data-poster="images/poster_3.2.svg"
+                src="images/poster_3.2.svg"
+                alt="Плакат 2"
+              />
+              <img
+                class="poster-thumb"
+                data-poster="images/poster_3.3.svg"
+                src="images/poster_3.3.svg"
+                alt="Плакат 3"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="series-info-block" data-series="07">
+          <div class="series-top">
+            <p class="series-number">07.</p>
+            <p class="series-name">ENERGY MANAGEMENT</p>
+          </div>
+          <div class="series-bottom">
+            <p class="series-dates">3.3 — 3.6</p>
+            <p class="series-subtitle">ЛЕКЦИИ «РЕСУРС И ВОССТАНОВЛЕНИЕ»</p>
+            <p class="series-desc">
+              Энергия — главный ресурс трансформации. Учимся управлять собой в
+              ритме космических циклов.
+            </p>
+            <div class="series-posters">
+              <img
+                class="poster-thumb"
+                data-poster="images/poster_4.1.svg"
+                src="images/poster_4.1.svg"
+                alt="Плакат 1"
+              />
+              <img
+                class="poster-thumb"
+                data-poster="images/poster_4.2.svg"
+                src="images/poster_4.2.svg"
+                alt="Плакат 2"
+              />
+              <img
+                class="poster-thumb"
+                data-poster="images/poster_4.3.svg"
+                src="images/poster_4.3.svg"
+                alt="Плакат 3"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- колонка 3 -->
+      <div class="events-col events-col-sidebar">
+        <div
+          class="sidebar-card hidden"
+          data-series="04"
+          data-main-poster="images/poster_1.1.svg"
+        >
+          <div class="sidebar-top">
+            <p class="sidebar-number">04.</p>
+            <p class="sidebar-name">UNFOLD // CHALLENGE // REFLECT</p>
+          </div>
+          <img
+            class="sidebar-poster"
+            src="images/poster_1.1.svg"
+            alt="Серия 04"
+          />
+        </div>
+
+        <div
+          class="sidebar-card"
+          data-series="05"
+          data-main-poster="images/poster_2.1.svg"
+        >
+          <div class="sidebar-top">
+            <p class="sidebar-number">05.</p>
+            <p class="sidebar-name">PROCESS // EVOLVE // TRANSFORM</p>
+          </div>
+          <img
+            class="sidebar-poster"
+            src="images/poster_2.1.svg"
+            alt="Серия 05"
+          />
+        </div>
+
+        <div
+          class="sidebar-card"
+          data-series="06"
+          data-main-poster="images/poster_3.1.svg"
+        >
+          <div class="sidebar-top">
+            <p class="sidebar-number">06.</p>
+            <p class="sidebar-name">ГРУЗ ПРОШЛОГО // ВРЕМЯ УХОДИТ</p>
+          </div>
+          <img
+            class="sidebar-poster"
+            src="images/poster_3.1.svg"
+            alt="Серия 06"
+          />
+        </div>
+
+        <div
+          class="sidebar-card"
+          data-series="07"
+          data-main-poster="images/poster_4.1.svg"
+        >
+          <div class="sidebar-top">
+            <p class="sidebar-number">07.</p>
+            <p class="sidebar-name">ENERGY MANAGEMENT</p>
+          </div>
+          <img
+            class="sidebar-poster"
+            src="images/poster_4.1.svg"
+            alt="Серия 07"
+          />
+        </div>
+      </div>
+    </main>
   </body>
 </html>
