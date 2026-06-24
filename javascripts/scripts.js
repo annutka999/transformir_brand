@@ -42,6 +42,17 @@ if (activePosterImg) {
     );
     activePosterImg.src = activeCard.getAttribute('data-main-poster');
 
+    const currentPoster = activeCard.getAttribute('data-main-poster');
+
+    if (
+      currentPoster.includes('poster_3.') ||
+      currentPoster.includes('poster_4.')
+    ) {
+      activePosterImg.classList.add('white-poster-active');
+    } else {
+      activePosterImg.classList.remove('white-poster-active');
+    }
+
     const activeBlock = document.querySelector(
       `.series-info-block[data-series="${seriesId}"]`
     );
@@ -55,10 +66,18 @@ if (activePosterImg) {
   function selectPoster(posterFile, clickedThumb) {
     activePosterImg.src = posterFile;
 
+    if (posterFile.includes('poster_3.') || posterFile.includes('poster_4.')) {
+      activePosterImg.classList.add('white-poster-active');
+    } else {
+      activePosterImg.classList.remove('white-poster-active');
+    }
+
     const activeBlock = document.querySelector('.series-info-block.active');
+
     activeBlock.querySelectorAll('.poster-thumb').forEach(function (thumb) {
       thumb.classList.remove('active');
     });
+
     clickedThumb.classList.add('active');
   }
 

@@ -510,7 +510,7 @@ form button:hover {
 }
 
 .add-btn:hover {
-  background: #000;
+  background: #8e8c8c;
   color: #fff;
 }
 
@@ -627,7 +627,12 @@ form button:hover {
 }
 
 .poster-thumb:hover {
-  border-color: #999;
+  border-color: #b6b6b6;
+}
+
+.white-poster-active {
+  border: 0.119vw solid #000;
+  box-sizing: border-box;
 }
 
 .events-col-sidebar {
@@ -867,6 +872,11 @@ form button:hover {
 
 .book-cover-btn:hover,
 .about-hero-btn:hover {
+  background: #8e8c8c;
+  color: #fff;
+}
+
+.add-btn.added {
   background: #000;
   color: #fff;
 }
