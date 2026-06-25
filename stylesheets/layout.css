@@ -578,14 +578,14 @@ body {
 
 /* о нас */
 
-.about-hero {
+.about-first {
   display: flex;
   align-items: center;
   gap: 4vw;
   justify-content: flex-end;
 }
 
-.about-hero-text {
+.about-first-text {
   width: 36.33%;
   display: flex;
   flex-direction: column;
@@ -594,21 +594,21 @@ body {
   padding: 2vw;
 }
 
-.about-hero-title {
+.about-first-title {
   font-size: 2.85vw;
   text-transform: uppercase;
 }
 
-.about-hero-desc {
+.about-first-desc {
   font-size: 1.309vw;
   line-height: 1.6vw;
 }
 
-.about-hero-video {
+.about-first-video {
   flex: 1;
 }
 
-.about-hero-video video {
+.about-first-video video {
   width: 100%;
   display: block;
 }
@@ -743,7 +743,7 @@ body {
 }
 
 .book-cover-btn,
-.about-hero-btn {
+.about-first-btn {
   align-self: flex-start;
   border: 0.119vw solid #000;
   font-size: 1.428vw;
@@ -760,7 +760,7 @@ body {
 }
 
 .book-cover-btn:hover,
-.about-hero-btn:hover {
+.about-first-btn:hover {
   background: #8e8c8c;
   color: #fff;
 }
@@ -770,7 +770,7 @@ body {
   color: #fff;
 }
 
-.about-hero-btn:hover .about-btn {
+.about-first-btn:hover .about-btn {
   color: #fff;
 }
 
