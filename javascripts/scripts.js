@@ -188,3 +188,22 @@ document.querySelectorAll('.shop-img-wrap').forEach((card) => {
     document.getElementById('cart-count').textContent = cartCount;
   });
 });
+
+formModalWindow();
+
+function formModalWindow() {
+  let form = document.querySelector('.homeFooter-email');
+  let modal = document.getElementById('emailModal');
+  let closeBtn = document.getElementById('closeModal');
+
+  if (!form || !modal) return;
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    modal.classList.add('active');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.classList.remove('active');
+  });
+}
